@@ -24,8 +24,6 @@ sddm="Y"
 xdph="Y"
 ###-Install zsh, oh-my-zsh & (Optional) pokemon-colorscripts?
 zsh="Y"
-###-Installing in a Asus ROG Laptops?
-rog="N"
 ###-Do you want to download pre-configured Hyprland dotfiles?
 dots="Y"
 
