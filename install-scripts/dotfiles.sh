@@ -39,7 +39,7 @@ if [ -f dotfiles.tar.gz ]; then
 		
 		# Delete existing directories starting with shredder-dotfiles
       find . -type d -name 'shredder-dotfiles*' -exec rm -rf {} +
-      rm -f Hyprland-Dots.tar.gz
+      rm -f dotfiles.tar.gz
       printf "${WARN} Removed existing dotfiles.tar.gz.\n"
     else
       echo -e "${NOTE} User chose not to upgrade. Exiting..." 2>&1 | tee -a "../Install-Logs/install-$(date +'%d-%H%M%S')_dotfiles.log"
