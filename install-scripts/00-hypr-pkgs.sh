@@ -12,6 +12,7 @@ brave-bin
 wine
 wine-mono
 wine-gecko
+plymouth-theme-motion-git
 )
 
 hypr_package=( 
