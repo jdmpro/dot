@@ -12,6 +12,8 @@ brave-bin
 wine
 wine-mono
 wine-gecko
+wireguard-tools
+telegram-desktop
 plymouth-theme-motion-git
 )
 
