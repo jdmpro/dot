@@ -8,7 +8,10 @@
 
 # add packages wanted here
 Extra=(
-
+brave-bin
+wine
+wine-mono
+wine-gecko
 )
 
 hypr_package=( 
