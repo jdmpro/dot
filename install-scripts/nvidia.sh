@@ -11,6 +11,12 @@ nvidia_pkg=(
   nvidia-utils
   libva
   libva-nvidia-driver-git
+  opencl-nvidia
+  xorg-server
+  xorg-server-devel
+  patchelf
+  libglvnd
+  egl-wayland
 )
 
 hypr=(
