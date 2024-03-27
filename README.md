@@ -129,7 +129,7 @@ log into your account
 ## 💖 Support
 - a Star on my Github repos would be nice 🌟
 
-- Subscribe to my Youtube Channel [YouTube](https://www.youtube.com/@jdmpro) 
+- Subscribe to my Youtube Channel [YouTube](https://www.youtube.com/watch?v=dQw4w9WgXcQ) 
 
 - You can also buy me Coffee Through ko-fi.com or Coffee.com 🤩
 
@@ -138,4 +138,4 @@ log into your account
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/JaKooLit)
 
 ####  📹 Youtube videos (Click to view and watch the playlist) 📹
-[![Youtube Playlist Thumbnail](https://raw.githubusercontent.com/JaKooLit/screenshots/main/Youtube.png)](https://youtube.com/playlist?list=PLDtGd5Fw5_GjXCznR0BzCJJDIQSZJRbxx&si=iaNjLulFdsZ6AV-t)
+[![Youtube Playlist Thumbnail](https://raw.githubusercontent.com/JaKooLit/screenshots/main/Youtube.png)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
