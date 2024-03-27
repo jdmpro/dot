@@ -10,12 +10,12 @@ fi
 clear
 
 printf "\n%.0s" {1..3}                            
-echo "   |  _.   |/  _   _  |  o _|_ "
-echo " \_| (_| o |\ (_) (_) |_ |  |_ "
+echo "  "
+echo " "
 printf "\n%.0s" {1..2}  
 
 # Welcome message
-echo "$(tput setaf 6)Welcome to JaKooLit's Arch-Hyprland Install Script!$(tput sgr0)"
+echo "$(tput setaf 6)Welcome to Shredder Arch-Hyprland Install Script!$(tput sgr0)"
 echo
 echo "$(tput setaf 166)ATTENTION: Run a full system update and Reboot first!! (Highly Recommended) $(tput sgr0)"
 echo
@@ -163,8 +163,6 @@ ask_yes_no "-Install XDG-DESKTOP-PORTAL-HYPRLAND? (For proper Screen Share ie OB
 printf "\n"
 ask_yes_no "-Install zsh, oh-my-zsh & (Optional) pokemon-colorscripts?" zsh
 printf "\n"
-ask_yes_no "-Installing in a Asus ROG Laptops?" rog
-printf "\n"
 ask_yes_no "-Do you want to download pre-configured Hyprland dotfiles?" dots
 printf "\n"
 
@@ -222,9 +220,6 @@ fi
 
 execute_script "InputGroup.sh"
 
-if [ "$rog" == "Y" ]; then
-    execute_script "rog.sh"
-fi
 
 if [ "$dots" == "Y" ]; then
     execute_script "dotfiles.sh"
