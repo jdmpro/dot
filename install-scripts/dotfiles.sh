@@ -37,7 +37,7 @@ if [ -f dotfiles.tar.gz ]; then
     if [ "$upgrade_choice" = "y" ]; then
 		echo -e "${NOTE} Proceeding to download the latest release." 2>&1 | tee -a "../Install-Logs/install-$(date +'%d-%H%M%S')_dotfiles.log"
 		
-		# Delete existing directories starting with JaKooLit-Hyprland-Dots
+		# Delete existing directories starting with shredder-dotfiles
       find . -type d -name 'shredder-dotfiles*' -exec rm -rf {} +
       rm -f Hyprland-Dots.tar.gz
       printf "${WARN} Removed existing dotfiles.tar.gz.\n"
