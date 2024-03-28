@@ -190,10 +190,10 @@ def install():
         ICON_THEME = "color"
 
     # defining asset paths
-    BACKGROUND_PATH = (f"dot/grub/assets/backgrounds/{styles.get(choice).lower()}-{RESOLUTION}.png")
-    ICONS_PATH = f"dot/grub/assets/icons-{RESOLUTION}/{ICON_THEME}/"
-    FONTS_PATH = f"dot/grub/assets/fonts/{RESOLUTION}/"
-    BASE_PATH = f"dot/grub/base/{RESOLUTION}/"
+    BACKGROUND_PATH = (f"assets/background/{styles.get(choice).lower()}-{RESOLUTION}.png")
+    ICONS_PATH = f"assets/icons-{RESOLUTION}/{ICON_THEME}/"
+    FONTS_PATH = f"assets/fonts/{RESOLUTION}/"
+    BASE_PATH = f"base/{RESOLUTION}/"
 
     print(f"\n{G}($){C} Copying assets to {THEME_DIR}")
     # copying & renaming background img
