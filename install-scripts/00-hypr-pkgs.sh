@@ -8,6 +8,7 @@
 
 # add packages wanted here
 Extra=(
+neofetch
 brave-bin
 wine
 wine-mono
