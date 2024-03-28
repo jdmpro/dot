@@ -39,7 +39,7 @@ if [ -f dot-files.tar.gz ]; then
 		
 		# Delete existing directories starting with shredder-dotfiles
       find . -type d -name 'jdmpro-dot-files*' -exec rm -rf {} +
-      rm -f dotfiles.tar.gz
+      rm -f dot-files.tar.gz
       printf "${WARN} Removed existing dot-files.tar.gz.\n"
     else
       echo -e "${NOTE} User chose not to upgrade. Exiting..." 2>&1 | tee -a "../Install-Logs/install-$(date +'%d-%H%M%S')_dotfiles.log"
