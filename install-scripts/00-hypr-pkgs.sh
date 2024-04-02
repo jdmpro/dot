@@ -15,7 +15,7 @@ wine-mono
 wine-gecko
 wireguard-tools
 telegram-desktop
-plymouth-theme-motion-git
+#plymouth-theme-motion-git
 )
 
 hypr_package=( 
