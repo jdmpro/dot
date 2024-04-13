@@ -77,11 +77,12 @@ printf "\n\n\n"
 NVEA="/etc/modprobe.d/nvidia.conf"
 if [ -f "$NVEA" ]; then
   printf "${OK} Seems like nvidia-drm modeset=1 is already added in your system..moving on.\n"
+  printf "${OK} Seems like nvidia_drm.fbdev=1 is already added in your system..moving on.\n"
   printf "\n"
 else
   printf "\n"
   printf "${YELLOW} Adding options to $NVEA..."
-  sudo echo -e "options nvidia-drm modeset=1" | sudo tee -a /etc/modprobe.d/nvidia.conf 2>&1 | tee -a "$LOG"
+  sudo echo -e "options nvidia-drm modeset=1 nvidia_drm.fbdev=1" | sudo tee -a /etc/modprobe.d/nvidia.conf 2>&1 | tee -a "$LOG"
   printf "\n"
 fi
 
@@ -101,7 +102,22 @@ if [ -f /etc/default/grub ]; then
 else
     echo "/etc/default/grub does not exist"
 fi
-
+# additional for GRUB users
+# Check if /etc/default/grub exists
+if [ -f /etc/default/grub ]; then
+    # Check if nvidia_drm.fbdev=1 is already present
+    if ! sudo grep -q "nvidia_drm.fbdev=1" /etc/default/grub; then
+        # Add nvidia_drm.modeset=1 to GRUB_CMDLINE_LINUX_DEFAULT
+        sudo sed -i 's/\(GRUB_CMDLINE_LINUX_DEFAULT=".*\)"/\1 nvidia_drm.fbdev=1"/' /etc/default/grub
+        # Regenerate GRUB configuration
+        sudo grub-mkconfig -o /boot/grub/grub.cfg
+        echo "nvidia_drm.fbdev=1 added to /etc/default/grub" 2>&1 | tee -a "$LOG"
+    else
+        echo "nvidia_drm.fbdev=1 is already present in /etc/default/grub" 2>&1 | tee -a "$LOG"
+    fi
+else
+    echo "/etc/default/grub does not exist"
+fi
 # Blacklist nouveau
     if [[ -z $blacklist_nouveau ]]; then
       read -n1 -rep "${CAT} Would you like to blacklist nouveau? (y/n)" blacklist_nouveau
