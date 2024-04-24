@@ -11,12 +11,12 @@ Extra=(
 neofetch
 brave-bin
 wine-mono
-wine-gecko
 wireguard-tools
 telegram-desktop
 gnome-weather
 pacseek
 sc-controller
+sdl2-gamepad-mapper
 )
 
 hypr_package=( 
@@ -40,6 +40,8 @@ polkit-gnome
 python-requests
 python-pywal 
 qt5ct
+qt5-quickcontrols
+qt5-wayland
 qt6ct
 qt6-svg
 rofi-lbonn-wayland-git 
@@ -48,7 +50,7 @@ swappy
 swayidle 
 swaylock-effects-git
 swaync 
-swww 
+#swww 
 waybar
 wget
 wl-clipboard
