@@ -1,4 +1,4 @@
-#!/bin/bash
+-#!/bin/bash
 # 💫 https://github.com/JaKooLit 💫 #
 # Nvidia Stuffs #
 if [[ $USE_PRESET = [Yy] ]]; then
@@ -6,17 +6,12 @@ if [[ $USE_PRESET = [Yy] ]]; then
 fi
 
 nvidia_pkg=(
-  nvidia-dkms
+  nvidia-open-dkms
   nvidia-settings
   nvidia-utils
-  libva
-  libva-nvidia-driver-git
   opencl-nvidia
   xorg-server
   xorg-server-devel
-  patchelf
-  libglvnd
-  egl-wayland
 )
 
 hypr=(
@@ -63,10 +58,10 @@ for krnl in $(cat /usr/lib/modules/*/pkgbase); do
 done
 
 # Check if the Nvidia modules are already added in mkinitcpio.conf and add if not
-if grep -qE '^MODULES=.*nvidia. *nvidia_modeset.*nvidia_uvm.*nvidia_drm' /etc/mkinitcpio.conf; then
+if grep -qE '^MODULES=.*nvidia. *nvidia_modeset.*nvidia_uvm.*nvidia_drm.*fbdev' /etc/mkinitcpio.conf; then
   echo "Nvidia modules already included in /etc/mkinitcpio.conf" 2>&1 | tee -a "$LOG"
 else
-  sudo sed -Ei 's/^(MODULES=\([^\)]*)\)/\1 nvidia nvidia_modeset nvidia_uvm nvidia_drm)/' /etc/mkinitcpio.conf 2>&1 | tee -a "$LOG"
+  sudo sed -Ei 's/^(MODULES=\([^\)]*)\)/\1 nvidia nvidia_modeset nvidia_uvm nvidia_drm fbdev)/' /etc/mkinitcpio.conf 2>&1 | tee -a "$LOG"
   echo "Nvidia modules added in /etc/mkinitcpio.conf"
 fi
 
