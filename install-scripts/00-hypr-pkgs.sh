@@ -22,6 +22,7 @@ sc-controller
 hypr_package=( 
 cliphist
 curl 
+dnsmasq
 grim 
 gvfs 
 gvfs-mtp
