@@ -10,12 +10,13 @@
 Extra=(
 neofetch
 brave-bin
-wine
 wine-mono
 wine-gecko
 wireguard-tools
 telegram-desktop
-#plymouth-theme-motion-git
+gnome-weather
+pacseek
+sc-controller
 )
 
 hypr_package=( 
