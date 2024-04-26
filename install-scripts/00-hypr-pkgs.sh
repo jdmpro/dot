@@ -20,6 +20,7 @@ sdl2-gamepad-mapper
 )
 
 hypr_package=( 
+hyprwayland-scanner-git
 cliphist
 curl 
 dnsmasq
