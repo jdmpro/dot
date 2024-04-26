@@ -26,6 +26,7 @@ dnsmasq
 grim 
 gvfs 
 gvfs-mtp
+gvfs-nts
 imagemagick 
 jq
 kitty
@@ -44,11 +45,11 @@ qt5-quickcontrols
 qt5-wayland
 qt6ct
 qt6-svg
-rofi-lbonn-wayland-git 
+rofi-lbonn-wayland 
 slurp 
 swappy 
 swayidle 
-swaylock-effects-git
+swaylock-effects
 swaync 
 #swww 
 waybar
@@ -62,7 +63,6 @@ yad
 
 # the following packages can be deleted. however, dotfiles may not work properly
 hypr_package_2=(
-brightnessctl 
 btop
 cava
 eog
@@ -73,7 +73,6 @@ mpv-mpris
 nvtop
 nwg-look-bin
 pacman-contrib
-vim
 yt-dlp
 )
 
