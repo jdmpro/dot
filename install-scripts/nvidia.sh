@@ -15,7 +15,7 @@ nvidia_pkg=(
 )
 
 hypr=(
-  hyprland
+  hyprland-git
   hyprcursor
 )
 
