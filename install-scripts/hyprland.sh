@@ -3,7 +3,7 @@
 # Main Hyprland Package #
 
 hypr=(
-hyprland
+hyprland-git
 hyprcursor
 )
 
