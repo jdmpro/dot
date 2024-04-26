@@ -8,6 +8,7 @@ thunar-volman
 tumbler
 ffmpegthumbnailer 
 thunar-archive-plugin
+thunar-archive-media
 )
 
 ## WARNING: DO NOT EDIT BEYOND THIS LINE IF YOU DON'T KNOW WHAT YOU ARE DOING! ##
